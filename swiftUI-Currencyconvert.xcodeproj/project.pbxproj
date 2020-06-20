@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		D600DA06249EA49D000A5170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D600DA04249EA49D000A5170 /* Main.storyboard */; };
 		D600DA12249EA49D000A5170 /* swiftUI_CurrencyconvertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D600DA11249EA49D000A5170 /* swiftUI_CurrencyconvertTests.swift */; };
 		D600DA1D249EA49D000A5170 /* swiftUI_CurrencyconvertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D600DA1C249EA49D000A5170 /* swiftUI_CurrencyconvertUITests.swift */; };
+		D600DA2C249EAD81000A5170 /* TinyNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = D600DA2B249EAD81000A5170 /* TinyNetworking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D600DA2C249EAD81000A5170 /* TinyNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +153,9 @@
 			dependencies = (
 			);
 			name = "swiftUI-Currencyconvert";
+			packageProductDependencies = (
+				D600DA2B249EAD81000A5170 /* TinyNetworking */,
+			);
 			productName = "swiftUI-Currencyconvert";
 			productReference = D600D9F8249EA49C000A5170 /* swiftUI-Currencyconvert.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +228,9 @@
 				Base,
 			);
 			mainGroup = D600D9EF249EA49C000A5170;
+			packageReferences = (
+				D600DA2A249EAD81000A5170 /* XCRemoteSwiftPackageReference "tiny-networking" */,
+			);
 			productRefGroup = D600D9F9249EA49C000A5170 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -597,6 +605,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D600DA2A249EAD81000A5170 /* XCRemoteSwiftPackageReference "tiny-networking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/objcio/tiny-networking";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D600DA2B249EAD81000A5170 /* TinyNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D600DA2A249EAD81000A5170 /* XCRemoteSwiftPackageReference "tiny-networking" */;
+			productName = TinyNetworking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D600D9F0249EA49C000A5170 /* Project object */;
 }
